@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #f2f3f4;
+  width: 98vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.left {
+  background-color: #fff;
+  width: 400px;
+  box-shadow: 0 0 0.5cm #7b7d7d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.right {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Lora", serif;
+}
+
+.right p {
+  margin: 0;
+}
+
+.right .page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin: 50px 0;
+  box-shadow: 0 0 0.5cm #7b7d7d;
+  width: 21cm;
+  min-height: 29.7cm;
+}
+
+@media print {
+  @page {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  body * {
+    visibility: hidden;
+  }
+  .page * {
+    visibility: visible;
+  }
+  .page {
+    position: fixed;
+    left: 10px;
+    top: -50px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .left {
+    background-color: #fff;
+    width: 375px;
+    margin: 0 auto;
+    box-shadow: 0 0 0.5cm #7b7d7d;
+  }
+
+  .right {
+    height: 10vh;
+    font-family: "Lora", serif;
+  }
+
+  .right .page {
   }
 }

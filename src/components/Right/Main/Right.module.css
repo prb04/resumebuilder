@@ -1,0 +1,58 @@
+h1 {
+  margin-top: 60px;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0 10px 0;
+}
+
+.headerResume {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+.contentHeader {
+  width: 100%;
+  margin: 0 20px;
+  white-space: normal;
+}
+
+.h1Name {
+  text-transform: uppercase;
+}
+
+.professionalResume {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.dividerRight {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.compNames{
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.end{
+  margin-bottom: 30px;
+}
+
+ul{
+  margin: 10px 0;
+  padding-left: 40px;
+}
+
+li{
+  word-wrap: break-word;
+  margin-top: 10px;
+}
